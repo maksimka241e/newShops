@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "./maksimka241e.github.io/newShops/static/css/main.de325d62.css",
-    "main.js": "./maksimka241e.github.io/newShops/static/js/main.fcb67151.js",
-    "static/js/453.ed3810f9.chunk.js": "./maksimka241e.github.io/newShops/static/js/453.ed3810f9.chunk.js",
-    "static/media/contact.png": "./maksimka241e.github.io/newShops/static/media/contact.79e48ac44694e00c9de5.png",
-    "index.html": "./maksimka241e.github.io/newShops/index.html",
-    "main.de325d62.css.map": "./maksimka241e.github.io/newShops/static/css/main.de325d62.css.map",
-    "main.fcb67151.js.map": "./maksimka241e.github.io/newShops/static/js/main.fcb67151.js.map",
-    "453.ed3810f9.chunk.js.map": "./maksimka241e.github.io/newShops/static/js/453.ed3810f9.chunk.js.map"
+    "main.css": "/newShops/static/css/main.de325d62.css",
+    "main.js": "/newShops/static/js/main.ca979355.js",
+    "static/js/453.ed3810f9.chunk.js": "/newShops/static/js/453.ed3810f9.chunk.js",
+    "static/media/contact.png": "/newShops/static/media/contact.79e48ac44694e00c9de5.png",
+    "index.html": "/newShops/index.html",
+    "main.de325d62.css.map": "/newShops/static/css/main.de325d62.css.map",
+    "main.ca979355.js.map": "/newShops/static/js/main.ca979355.js.map",
+    "453.ed3810f9.chunk.js.map": "/newShops/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.de325d62.css",
-    "static/js/main.fcb67151.js"
+    "static/js/main.ca979355.js"
   ]
 }
