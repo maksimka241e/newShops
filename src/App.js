@@ -1,5 +1,5 @@
 import './App.css';
-import {Route, Routes} from "react-router-dom";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 import { HomeAllComponents } from './Components/Home/homeComponents/homeComponents';
 import { AboutAllComponents } from './Components/About/aboutComponents/aboutComponents';
 import { ContactAllComponents } from './Components/Contact/contactComponents/contactComponents';
@@ -11,6 +11,7 @@ import { BasketsAllComponents } from './Components/Baskets/basketAll/basketAll';
 
 function App() {
   return (
+    <BrowserRouter basename='/newShops'>
     <div className="App">
         <Routes>
             <Route path="*" element={<HomeAllComponents></HomeAllComponents>}></Route>
@@ -23,6 +24,7 @@ function App() {
             <Route path="/Baskets" element={<BasketsAllComponents></BasketsAllComponents>}></Route>
         </Routes>
     </div>
+    </BrowserRouter>
   );
 }
 
