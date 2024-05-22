@@ -11,7 +11,6 @@ import { BasketsAllComponents } from './Components/Baskets/basketAll/basketAll';
 
 function App() {
   return (
-    <BrowserRouter basename='/newShops'>
     <div className="App">
         <Routes>
             <Route path="*" element={<HomeAllComponents></HomeAllComponents>}></Route>
@@ -24,7 +23,6 @@ function App() {
             <Route path="/Baskets" element={<BasketsAllComponents></BasketsAllComponents>}></Route>
         </Routes>
     </div>
-    </BrowserRouter>
   );
 }
 
