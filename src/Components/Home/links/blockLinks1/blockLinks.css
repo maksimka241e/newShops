@@ -1,0 +1,61 @@
+.BlockLinks1{
+    display: flex;
+    width: 97%;
+    margin: auto;
+    max-width: 1130px;
+    height: 100%;
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* blocks1 */
+/* blocks2 */
+.BlockLinks2{
+    display: flex;
+    flex-direction: row;
+    width: 23%;
+    align-items: center;
+    justify-content: space-between;
+}
+.BlockLinksMin2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.BlockLinksMin2Img{
+    width: 36px;
+    height: 36px;
+}
+.BlockLinksMin2Title{
+    text-align: center;
+    color: #212121;
+    cursor: default;
+}
+.BlockLinksMin2Money{
+    color: #212121;
+}
+@media screen and (max-width:950px)  {
+    .BlockLinks2 {
+        width: 33%;
+    }
+}
+@media(max-width:700px){
+    .BlockLinks2{
+        gap: 30px;
+        width: 51%;
+    }
+    .BlockLinksMin2Title {
+        text-align: center;
+    }
+    .BlockLinks1Img{
+        width: 50%;
+    }
+    .BlockLinks1 {
+        align-items: center;
+        justify-content: center;
+    }
+}

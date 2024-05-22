@@ -1,0 +1,14 @@
+.FavouritesBlock{
+    padding-top: 50px;
+    display: flex;
+    width: 97%;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 1170px;
+    min-height: 330px;
+    flex-direction: column;
+}
+.FavouritesBlockTitle{
+    font-size: 25px;
+}

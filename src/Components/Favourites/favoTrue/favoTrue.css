@@ -1,0 +1,114 @@
+.FavouritesTrueBlockAll{
+    display: flex;
+    width: 97%;
+    margin: auto;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-direction: column;
+}
+.FavouritesTrueBlock{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    gap: 10px;
+    justify-content: space-between;
+    box-shadow: 1px 4px 11px #eaeaea;
+    border-radius: 15px;
+}
+.FavouritesTrueBlockImg{
+    max-height: 150px;
+    max-width: 150px;
+    width: 100%;
+    height: 100%;
+}
+.FavFavouritesTrueBlocksTitles{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.FavouritesTrueBlockTitle{
+    cursor: pointer;
+    text-align: center;
+    font-size: 17px;
+    color: #333333;
+    transition:all 0.3s;
+    margin: 0;
+}
+.FavouritesTrueBlockTitle:hover{
+    color: #000;
+    transition: all 0.3s;
+}
+.FavouritesTrueBlockText{
+    text-align: center;
+    font-size: 19px;
+    color: #333333;
+    margin: 0;
+}
+.FavouritesTrueBlockBtnDelete{
+    cursor: pointer;
+    padding: 8px;
+    font-size: 16px;
+    color: #fff;
+    background: #1E3053;
+    border: 1px solid #1E3053;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+.FavouritesTrueBlockBtnDelete:hover{
+    transform: scale(0.94);
+    color: #1E3053;
+    background: #fff;
+    transition: all 0.3s;
+}
+.FavouritesTrueBlockBtnAdd{
+    cursor: pointer;
+    padding: 8px;
+    font-size: 16px;
+    color: #fff;
+    background: #1E3053;
+    border: 1px solid #1E3053;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+.FavouritesTrueBlockBtnAdd:hover{
+    transform: scale(0.94);
+    color: #1E3053;
+    background: #fff;
+    transition: all 0.3s;
+}
+.FavouritesTrueBlockBtns{
+    display: flex;
+    gap: 10px;
+    padding-right: 10px;
+}
+@media(max-width:830px){
+    .FavFavouritesTrueBlocksTitles {
+        width: 36%;
+    }
+}
+@media(max-width:768px) {
+    .FavFavouritesTrueBlocksTitles {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .FavouritesTrueBlock{
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+        max-width: 280px;
+        height: 100%;
+        min-height: 380px;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        align-items: center;
+    }
+    .FavouritesTrueBlockBtns{
+        display: flex;
+        gap: 10px;
+        padding-right: 0px;
+    }
+}

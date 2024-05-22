@@ -1,0 +1,61 @@
+/* allStyle */
+a{
+    text-decoration: none;
+}
+.AllStyleTitle{
+    padding-top: 10px;
+    font-size: 17px;
+    color: #212121;
+    transition: all 0.3s;
+}
+.HomeLinksAllBLock{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.current{
+    color: #21212193;
+}
+.AllStyleTitle:hover{
+    transition: all 0.3s;
+    color: #21212193;
+}
+.activeLink{
+    color: #21212193;
+}
+.HomeLinksBLock{
+    display: flex;
+    width: 97%;
+    margin: auto;
+    max-width: 1130px;
+    height: 100%;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.HomeLinksBLockMin1{
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+}
+.HomeLinksBLockMin2{
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+}
+
+@media screen and (max-width:950px)  {
+    .BlockLinks2 {
+        width: 33%;
+    }
+}
+@media(max-width:630px){
+    .HomeLinksBLockMin2 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .HomeLinksBLockMin1 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

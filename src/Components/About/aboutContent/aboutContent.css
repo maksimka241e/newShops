@@ -1,0 +1,27 @@
+.aboutBlockAll{
+    padding-top: 50px;
+    display:flex;
+    width: 97%;
+    margin: auto;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 1170px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.aboutBlockAllTitle{
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+.aboutAllText{
+    font-size: 17px;
+    color: #333333;
+}
+.aboutAllImg{
+    max-width: 700px;
+    width: 100%;
+    max-height: 500px;
+    height: 100%;
+}

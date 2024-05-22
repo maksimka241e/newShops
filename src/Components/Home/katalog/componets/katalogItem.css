@@ -1,0 +1,42 @@
+/* карточка при наведение */
+.katalogBlockHover {
+    display: flex;
+    height: 260px;
+    width: 240px;
+    margin-left: 10px;
+    position: absolute;
+    background: #f6f7f8db;
+    border-radius: 10px;
+    transition: all 0.3s;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.katalogBlockHoverImg{
+    cursor: pointer;
+    transition: all 0.3s;
+    filter: blur(3px);
+}
+.katalogBlockHoverImg1{
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 46px;
+    height: 26px;
+}
+.katalogBlockHoverImg2{
+    cursor: pointer;
+    transition: all 0.3s;
+    filter: blur(3px);
+    width: 46px;
+    height: 36px;
+}
+.katalogBlockHoverImg:hover{
+    transition: all 0.3s;
+    filter:blur(0px);
+}
+/*  */
+.projectsHover:hover .katalogBlockHover{
+    transition: all 0.3s;
+    opacity: 1;
+}

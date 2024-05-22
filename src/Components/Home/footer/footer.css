@@ -1,0 +1,126 @@
+.FooterBlockAllStyle{
+    background: #f8f8f8;
+    margin-top: 50px;
+    padding-bottom: 80px;
+}
+.FooterBlock{
+    padding-top: 50px;
+    display: flex;
+    width: 97%;
+    margin: auto;
+    max-width: 1130px;
+    height: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+}
+/* footer1 */
+.FooterBlockMin1{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    gap: 5px;
+}
+.FooterBlockMin1Img{
+    width: 150px;
+    height: 49px;
+}
+/* footer2 */
+.FooterBlockMin2{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    gap: 15px;
+}
+.FooterBlockMin2Title{
+    font-size: 20px;
+    color: #555555;
+    margin: 0px;
+    padding-top: 10px;
+}
+/* footer3 */
+.FooterBlockMin3{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    gap: 15px;
+}
+.FooterBlockMin3Title{
+    font-size: 20px;
+    color: #555555;
+    margin: 0px;
+    padding-top: 10px;
+}
+/* footer4 */
+.FooterBlockMin4{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    gap: 15px;
+}
+.FooterBlockMin4Title{
+    font-size: 20px;
+    color: #555555;
+    margin: 0px;
+    padding-top: 10px;
+}
+/* allStyle */
+.FooterBlockMin4TextAll{
+    cursor: pointer;
+    margin: 0px;
+    font-size: 17px;
+    color: #333333;
+}
+.FooterBlockMin2TitleAll{
+    cursor: pointer;
+    margin: 0px;
+    font-size: 17px;
+    color: #333333;
+}
+.FooterBlockMin1TextAl1{
+    margin: 0px;
+    font-size: 17px;
+    color: #333333;
+}
+.FooterBlockMin4TextAll:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.FooterBlockMin2TitleAll:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+@media  screen and (max-width:880px) {
+    .FooterBlockMin4TextAll {
+        font-size: 15px;
+    }
+    .FooterBlockMin1TextAl1{
+        font-size: 15px;
+    }
+    .FooterBlockMin2Title {
+        font-size: 18px;
+    }
+    .FooterBlockMin3Title {
+        font-size: 18px;
+    }
+    .FooterBlockMin4Title {
+        font-size: 18px;
+    }
+}
+@media  screen and (max-width:768px) {
+    .FooterBlock{
+        flex-wrap: wrap;
+    }
+    .FooterBlockMin1{
+        width: 50%;
+    }
+    .FooterBlockMin2{
+        width: 50%;
+    }
+    .FooterBlockMin3{
+        width: 50%;
+    }
+    .FooterBlockMin4{
+        width: 50%;
+    }
+}

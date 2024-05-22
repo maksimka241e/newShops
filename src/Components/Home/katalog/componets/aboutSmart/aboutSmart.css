@@ -1,0 +1,65 @@
+.AboutSmartBlockAll {
+    padding-top: 50px;
+    display: flex;
+    width: 97%;
+    margin: auto;
+    gap: 10px;
+    max-width: 1170px;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.AboutSmartBlocks{
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 23%;
+    align-items: center;
+    border: 1px solid #2953a3e6;
+    border-radius: 15px;
+    transition: all 0.4s;
+    gap: 10px;
+}
+.AboutSmartBlocks:hover{
+    transition: all 0.4s;
+    border: 1px solid #2953a3e6;
+    background: #2953a3e6;
+}
+.AboutSmartBlocks:hover > .AboutSmartBlocksText{
+    transition: all 0.4s;
+    color: #fff;
+}
+.AboutSmartBlocksImg1{
+    width: 36px;
+    height: 32px;
+}
+.AboutSmartBlocksImg2{
+    width: 32px;
+    height: 32px;
+}
+.AboutSmartBlocksImg3{
+    width: 40px;
+    height: 32px;
+}
+.AboutSmartBlocksImg4{
+    width: 40px;
+    height: 32px;
+}
+.AboutSmartBlocksText{
+    cursor: default;
+    font-size: 16px;
+    color: #1E3053;
+}
+@media screen and (max-width:1060px) {
+    .AboutSmartBlocks{
+        display: flex;
+        flex-direction: row;
+        width: 39%;
+        align-items: center;
+        gap: 10px;
+    }
+}
+@media screen and(max-width:700px) {
+    
+}
