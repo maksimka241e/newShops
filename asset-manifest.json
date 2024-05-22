@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/newShops/static/css/main.de325d62.css",
-    "main.js": "/newShops/static/js/main.51815968.js",
+    "main.js": "/newShops/static/js/main.7089bc65.js",
     "static/js/453.ed3810f9.chunk.js": "/newShops/static/js/453.ed3810f9.chunk.js",
     "static/media/contact.png": "/newShops/static/media/contact.79e48ac44694e00c9de5.png",
     "index.html": "/newShops/index.html",
     "main.de325d62.css.map": "/newShops/static/css/main.de325d62.css.map",
-    "main.51815968.js.map": "/newShops/static/js/main.51815968.js.map",
+    "main.7089bc65.js.map": "/newShops/static/js/main.7089bc65.js.map",
     "453.ed3810f9.chunk.js.map": "/newShops/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.de325d62.css",
-    "static/js/main.51815968.js"
+    "static/js/main.7089bc65.js"
   ]
 }
