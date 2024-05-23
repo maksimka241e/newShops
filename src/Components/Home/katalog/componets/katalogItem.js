@@ -11,17 +11,30 @@ export function KatalogBlockItem(){
         return faves !== null  ? faves : []
     })
 
+    const [basket,SetBasket] = useState(() => {
+        const newBasket = JSON.parse(localStorage.getItem('basketItems'))
+        return newBasket !== null ? newBasket : []
+    })
+
     useEffect(() => {
         localStorage.setItem('favItem', JSON.stringify([]));
+        localStorage.setItem('basketItems', JSON.stringify([]));
         const user = JSON.parse(localStorage.getItem('favItem')) || [] 
+        const user1 = JSON.parse(localStorage.getItem('basketItems')) || [] 
     }, [])
 
     useEffect(() => {
         localStorage.setItem('favItem', JSON.stringify(fav))
-    }, [fav])
+        localStorage.setItem('basketItems',JSON.stringify(basket))
+    }, [fav,basket])
 
     function SetAddFav(index){
         localStorage.getItem('TrueLogin') !== null ? Seting(index) :  console.log('автолизируйтесь чтобы добавить товар');
+    }
+
+    function SetAddBasket(index){
+        SetBasket([...basket,dates[index]])
+        SetModal(true)
     }
 
     function Seting(index){
@@ -41,7 +54,7 @@ export function KatalogBlockItem(){
                         <div className="projectsHover">
                             <div className="katalogBlockHover">
                                 <img onClick={() => SetAddFav(index)} className='katalogBlockHoverImg katalogBlockHoverImg1' src='https://clipart-library.com/images_k/transparent-heart-icon/transparent-heart-icon-22.png' alt='heart'/>
-                                <img className='katalogBlockHoverImg katalogBlockHoverImg2' src='https://webstockreview.net/images/grocery-clipart-grocery-item-13.png' alt='basket'/>
+                                <img onClick={() => SetAddBasket(index)} className='katalogBlockHoverImg katalogBlockHoverImg2' src='https://webstockreview.net/images/grocery-clipart-grocery-item-13.png' alt='basket'/>
                             </div>
                             <img className="katalogBlockImg" src={item.img} id={index} alt={item.title}/>                        
                         </div>

@@ -1,25 +1,36 @@
-import React  from "react";
+import React, { useState }  from "react";
 import { useForm } from "react-hook-form";
 import "./Registartion.css";
 import { BlockLinks } from "../Home/links/links";
 import { FooterBlock } from "../Home/footer/footer";
+import { RegistrationModal } from "./Component/regisModal/regisModal";
 // import { Link, Outlet } from "react-router-dom";
 
 export function Registration(){
+
+    const [modal,SetModal] = useState(false)
     const { register, handleSubmit, formState: { errors } } = useForm();
     
     const onSubmit = (data) => {
         localStorage.setItem(data.login, JSON.stringify({ 
             login: data.login, password: data.password 
         }));
+        SetModal(true)
         console.log(JSON.parse(localStorage.getItem(data.login)));
         // <Link to='/Authorization'></Link> <Outlet/>
       };
+
+      modal === true ? setTimeout(() =>{
+        SetModal(false) 
+        window.location.href = 'https://maksimka241e.github.io/newShops/Authorization'
+        
+    },1400) : setTimeout(() => {SetModal(false)},100)
 
       return(
         <div>
         <BlockLinks></BlockLinks>
         <div className="BlockAuthorizationRegistration">
+            {modal === false ? '' : <RegistrationModal/>}
             <div className="BlockRegistrationMin1">
             <h3 className="RegistrationMin1Title">Регистрация</h3>
             <form className="BlockRegistrationMin1Form" onSubmit={handleSubmit(onSubmit)}>
