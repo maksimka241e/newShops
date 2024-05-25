@@ -107,3 +107,8 @@
     padding-right: 10px;
     flex-direction: column;
 }
+@media(max-width:500px){
+    .BlockAuthorizationLogin {
+        width: 93%;
+    }
+}

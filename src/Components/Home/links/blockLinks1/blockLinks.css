@@ -38,7 +38,7 @@
 .BlockLinksMin2Money{
     color: #212121;
 }
-@media screen and (max-width:950px)  {
+@media(max-width:950px)  {
     .BlockLinks2 {
         width: 33%;
     }
@@ -58,4 +58,12 @@
         align-items: center;
         justify-content: center;
     }
+}
+@media(max-width:490px){
+    .BlockLinksMin2Title {
+        display: none;
+    }
+    .BlockLinks2{
+        justify-content: center;
+    }    
 }

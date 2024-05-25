@@ -38,7 +38,7 @@ export function FavouritesTrue(){
 
 
     return(
-        <div className="FavouritesTrueBlockAll">
+        <div className="FavouritesTrueBlockAll fA">
             {modal === false ? '' : <FavModal/>}
             {modals === false ? '' : <KatalogModal/>}
             {favs !== null  ?

@@ -51,7 +51,7 @@
     font-size: 16px;
     color: #1E3053;
 }
-@media screen and (max-width:1060px) {
+@media(max-width:1060px) {
     .AboutSmartBlocks{
         display: flex;
         flex-direction: row;
@@ -60,6 +60,13 @@
         gap: 10px;
     }
 }
-@media screen and(max-width:700px) {
-    
+@media(max-width:480px) {
+    .AboutSmartBlockAll{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .AboutSmartBlocks{
+        width: 90%;
+    }
 }

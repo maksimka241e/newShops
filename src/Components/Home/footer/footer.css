@@ -90,7 +90,7 @@
     cursor: pointer;
     text-decoration: underline;
 }
-@media  screen and (max-width:880px) {
+@media(max-width:880px) {
     .FooterBlockMin4TextAll {
         font-size: 15px;
     }
@@ -107,7 +107,7 @@
         font-size: 18px;
     }
 }
-@media  screen and (max-width:768px) {
+@media(max-width:768px) {
     .FooterBlock{
         flex-wrap: wrap;
     }
@@ -122,5 +122,10 @@
     }
     .FooterBlockMin4{
         width: 50%;
+    }
+}
+@media(max-width:430px){
+    .FooterBlockMin1TextAl1 {
+        font-size: 13px;
     }
 }
