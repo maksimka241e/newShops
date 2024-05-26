@@ -72,7 +72,7 @@ box-shadow: 3px 3px 8px 3px rgba(34, 60, 80, 0.2);
     transition: all 0.3s;
 }
 
-@media screen and (max-width:1200px){
+@media(max-width:1200px){
     .katalogBlockAllItem{
         display: flex;
         gap: 15px;
@@ -81,7 +81,7 @@ box-shadow: 3px 3px 8px 3px rgba(34, 60, 80, 0.2);
         flex-wrap: wrap;
     }
 }
-@media screen and (max-width:920px){
+@media (max-width:920px){
     .katalogBlockAllItem{
         display: flex;
         gap: 15px;
@@ -90,6 +90,13 @@ box-shadow: 3px 3px 8px 3px rgba(34, 60, 80, 0.2);
         flex-wrap: wrap;
     }
 }
-@media screen and (max-width:650px){
-
+@media(max-width:500px){
+    .katalogBlocksItem{
+        border: 10px solid #f6f7f8db;
+        box-shadow: 3px 3px 8px 3px rgba(34, 60, 80, 0.2);
+    }
+    .katalogBlockBtn {
+        width: 93%;
+        margin-left: 9px;
+    }    
 }

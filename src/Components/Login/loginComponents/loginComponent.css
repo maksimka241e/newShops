@@ -111,4 +111,10 @@
     .BlockAuthorizationLogin {
         width: 93%;
     }
+    .LoginMin1InputBtn {
+        width: 50%;
+    }
+    .BtnFalseLogin{
+        width: 50%;
+    } 
 }

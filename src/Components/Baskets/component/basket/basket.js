@@ -1,13 +1,19 @@
 import {React, useEffect, useState   } from "react";
 import './basket.css';
 import { FavModal } from "../../../Favourites/favModal/favModal";
+import { BlockResultContent } from "../result/result";
 
 export function BasketsContent(){
+    const [resultBl,SetResultBl] = useState(false)
+
     const [modal,SetModal] = useState(false)
+
     const [basket,SetBasket] = useState(() => {
         const newBasket = JSON.parse(localStorage.getItem('basketItems'))
         return newBasket !== null ? newBasket : []
     })
+
+   const res = ((basket.reduce((a,v) =>  a = a + v.prase , 0 )))
 
     useEffect(() => {
         localStorage.setItem('basketItems',JSON.stringify(basket))
@@ -21,7 +27,7 @@ export function BasketsContent(){
     }
 
     modal === true ? setTimeout(() => {SetModal(false)},1400) : setTimeout(() => {SetModal(false)},100)
-
+   
     return(
         <div className="BasketsBlockAll">
             {modal === false ? '' : <FavModal/>}
@@ -40,6 +46,12 @@ export function BasketsContent(){
                         </div>
                     </div>
                     ))}
+                </div>
+                <div className="BlockResult">
+                    <div>
+                        <h3 className="BlockResultTitle">Итог: {res} руб.</h3>
+                        <button className="BlockResultBtn" onClick={() => SetResultBl(true)}>Заказать</button>
+                    </div>
                 </div>
             </div>
         </div>

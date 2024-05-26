@@ -22,7 +22,7 @@ export function Registration(){
 
       modal === true ? setTimeout(() =>{
         SetModal(false) 
-        window.location.href = 'https://maksimka241e.github.io/newShops/Authorization'
+       window.location.reload()
         
     },1400) : setTimeout(() => {SetModal(false)},100)
 

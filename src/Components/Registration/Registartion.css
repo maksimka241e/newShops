@@ -81,6 +81,9 @@
     .BlockAuthorizationRegistration {
         width: 93%;
     }
+    .RegistrationMin1InputBtn {
+        width: 60%;
+    }
 }
 /* *{
     outline: 4px solid green !important;

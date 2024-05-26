@@ -36,13 +36,13 @@ export function KatalogBlockItem(){
         SetBasket([...basket,dates[index]])
         SetModal(true)
     }
-
     function Seting(index){
         SetFav([...fav, dates[index]]) 
         SetModal(true)
     }
 
     modal === true ? setTimeout(() => {SetModal(false)},1400) : setTimeout(() => {SetModal(false)},100)
+
 
     return(
         <div className="katalogBlockAll">

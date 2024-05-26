@@ -15,12 +15,14 @@
     gap: 10px;
     justify-content: space-between;
     box-shadow: 1px 4px 11px #eaeaea;
-    border-radius: 15px;
+    border-radius: 15px ;
+    border: 1px solid #e8e8e8;
 }
 .FavouritesTrueBlockImg{
     max-height: 150px;
     max-width: 150px;
     width: 100%;
+    border-radius: 15px;
     height: 100%;
 }
 .FavFavouritesTrueBlocksTitles{
